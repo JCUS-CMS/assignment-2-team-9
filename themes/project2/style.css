@@ -1,5 +1,5 @@
 /*!
-Theme Name: test2
+Theme Name: project2
 Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
@@ -72,7 +72,7 @@ a:hover{
     color:#333;
 }
 .container{
-    width:960px;
+    width:1200px;
     margin:auto;
     overflow:auto;
 }

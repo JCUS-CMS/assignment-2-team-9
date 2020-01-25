@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package project2
+ * @package Assignment2
  */
 
 /*
@@ -28,18 +28,18 @@ if ( post_password_required() ) {
 		?>
 		<h2 class="comments-title">
 			<?php
-			$project2_comment_count = get_comments_number();
-			if ( '1' === $project2_comment_count ) {
+			$assignment2_comment_count = get_comments_number();
+			if ( '1' === $assignment2_comment_count ) {
 				printf(
 					/* translators: 1: title. */
-					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'project2' ),
+					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'assignment2' ),
 					'<span>' . get_the_title() . '</span>'
 				);
 			} else {
 				printf( // WPCS: XSS OK.
 					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $project2_comment_count, 'comments title', 'project2' ) ),
-					number_format_i18n( $project2_comment_count ),
+					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $assignment2_comment_count, 'comments title', 'assignment2' ) ),
+					number_format_i18n( $assignment2_comment_count ),
 					'<span>' . get_the_title() . '</span>'
 				);
 			}
@@ -63,7 +63,7 @@ if ( post_password_required() ) {
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() ) :
 			?>
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'project2' ); ?></p>
+			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'assignment2' ); ?></p>
 			<?php
 		endif;
 
